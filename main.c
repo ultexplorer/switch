@@ -3,12 +3,12 @@
 int main(){    
     int c, i, nwhite, nother, ndigit[10];
     nwhite = nother = 0;
-    for(i=0; i<10; i++){
+    for(i=0; i<10; i++)
+    {
         ndigit[i]=0;
-        printf("%d\n", ndigit[i]);
     }
 
-    while (c=getchar()!=EOF)
+    while ((c=getchar()) != EOF && (c=getchar()) !='\n')
     {
         switch (c)
         {
@@ -19,20 +19,19 @@ int main(){
         case ' ' :
         case '\t':
         case '\n':
-        nwhite++;
+            nwhite++;
             break;       
         default:
-        nother++;
+            nother++;
             break;
         }
     }
-
-    printf("Digits = ");
+    printf("digits =");
 
     for(i=0; i<10; i++){
         printf(" %d", ndigit[i]);
-    } 
-
+    }
+    
     printf(", white cpase = %d, other = %d\n", nwhite, nother);    
 
     return 0;
