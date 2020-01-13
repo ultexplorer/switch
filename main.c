@@ -5,6 +5,7 @@ int main(){
     nwhite = nother = 0;
     for(i=0; i<10; i++){
         ndigit[i]=0;
+        printf("%d\n", ndigit[i]);
     }
 
     while (c=getchar()!=EOF)
@@ -31,7 +32,7 @@ int main(){
     for(i=0; i<10; i++){
         printf(" %d", ndigit[i]);
     } 
-    
+
     printf(", white cpase = %d, other = %d\n", nwhite, nother);    
 
     return 0;
