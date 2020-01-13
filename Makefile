@@ -1,4 +1,4 @@
-program_name := ptr1
+program_name := switch
 source_dirs := .
 
 source_dirs := $(addprefix ../,$(source_dirs))
